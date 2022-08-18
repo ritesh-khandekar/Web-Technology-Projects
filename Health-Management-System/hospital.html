@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Employee Information</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <a href="./index.html">
+                <img src="./images/logo.png" class="logo">
+            </a>
+            <ul>
+                <li class="active"><a href="./hospital.html">Hospital information</a></li>
+                <li><a href="./employee.html">Employee information</a></li>
+                <li><a href="./doctor.html">Doctor information</a></li>
+                <li><a href="./patient.html">Patient information</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <div class="button-box">
+                <button class="btn" onclick="window.location.href = './hospital.html'">LOGIN</button>
+                <button class="btn" onclick="window.location.href = './hospital_register.html'">REGISTER</button>
+            </div>
+            <div class="tabmenu glass">
+                <h1>LOGIN</h1>
+                <div class="tab">
+                    <form id='login' class="input-group-login">
+                        <input type="text" class='input-field' placeholder='Enter your email ID' required>
+                        <input type="password" class='input-field' placeholder='Enter Password' required>
+                        <div class="form-group">
+                            <input type="checkbox" class='check-box' id="check"><label for="check">Remeber Password</label>
+                        </div>
+                        <button type="submit" class='submit-btn'>LOGIN</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+</html>
