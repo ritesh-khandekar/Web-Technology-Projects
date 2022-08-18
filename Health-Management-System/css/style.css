@@ -1,0 +1,211 @@
+/* INDEX AND ALL */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/bg_image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    background: white;
+    /* background: linear-gradient(to left, , white) */
+}
+
+.logo {
+    width: 200px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .075);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #2f4faa;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar ul li:hover {
+    background-color: #2f4faa;
+    cursor: pointer;
+}
+.active, .active a{
+    background-color: #2f4faa;
+    cursor: pointer;
+    color: white !important;
+}
+.navbar ul li:hover a {
+    color: white;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.content h1 {
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/* span {
+    background: #004896;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+} */
+
+/* EMPLOYEE INFO CSS */
+.form-box{
+    text-align: center;
+}
+.button-box{
+    text-align: center;
+}
+.button-box button {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 16px;
+    font-weight: bold;
+    /* border: 2px solid #fff; */
+    background: #2f4faa;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: none;
+}
+.button-box button:nth-child(2){
+    background: #26cdd1 ;
+}
+
+/* TABS */
+.tabmenu{
+    margin: 15px auto;
+    text-align: center;
+    background: white;
+    width: 60%;
+}
+.glass{
+    background: linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 32px;
+    color: white;
+}
+.glass h1{
+    margin: 30px;
+    font-weight: bold;
+    color: #26cdd1;
+}
+.tabmenu .menu-item{
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: white;
+    box-sizing: border-box;
+}
+.tabmenu .menuitem:active{
+    border-bottom: 3px solid #2f4faa !important;
+}
+/* LOGIN AND REGISTER FORM */
+form .input-field:not([type="submit"]){
+    padding: 20px 20px;
+    border: none;
+    outline: none;
+    display: block;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 16px;
+    font-size: medium;
+    color: #2f4faa;
+}
+form .input-field:not([type="submit"]):focus{
+    box-shadow: 0 1px 1px #26cdd1 inset, 0 0 8px #26cdd1;
+    border-color: #26cdd1;
+}
+form .check-box{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+form .fname,.lname{
+    width: 35% !important;
+    display: inline-block !important;
+}
+form .form-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form .submit-btn{
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    margin: 30px 10px;
+    border-radius: 16px;
+    font-weight: bold;
+    border: 0;
+    color: white;
+    background: linear-gradient(to bottom right, #2f4faa, #26cdd1 );
+}
+
+/* TEST CODE */
+
+.input-group-login .input-field{
+    margin: 40px auto !important;
+}
+.input-group-register .input-field{
+    padding: 15px !important;
+}
