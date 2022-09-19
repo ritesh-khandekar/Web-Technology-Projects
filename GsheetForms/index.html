@@ -35,6 +35,15 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".center").hide()
+            $(".center").fadeIn(1000)
+            $(".center").find("input").hide();
+            $(".center").find("input").fadeIn(2000)
+        })()
+    </script>
 </body>
 
 </html>
