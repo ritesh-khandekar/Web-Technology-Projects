@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="center">
+        <form name="student-form">
+            <h1>Student Details</h1>
+            <input type="text" name="Name" placeholder="Student Name" />
+            <input type="phone" name="Phone" placeholder="Student Contact Number" />
+            <input type="email" name="Email" placeholder="Student Email" />
+            <input type="text" name="Interests" placeholder="Areas of Study Interests" />
+            <input type="submit" name="submit" value="Submit Details" />
+        </form>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx7-pAW1GxSOBSB5-_H1WLVmP6RdmybQl95KCoRhEvlEtIWuA/exec'
+        const form = document.forms['student-form']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            console.log(form)
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    // form.reset();
+                    alert("Thanks for Contacting us..! ")
+                    console.log(response.json())
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
