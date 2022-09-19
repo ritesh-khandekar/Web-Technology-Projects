@@ -29,9 +29,8 @@
             console.log(form)
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
-                    // form.reset();
+                    form.reset();
                     alert("Thanks for Contacting us..! ")
-                    console.log(response.json())
                 })
                 .catch(error => console.error('Error!', error.message))
         })
