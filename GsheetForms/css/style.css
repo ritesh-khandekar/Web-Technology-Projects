@@ -26,7 +26,6 @@ form input:not([type="submit"]){
 }
 form input:not([type="submit"]):focus{
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
-    border: 1px solid #00ffd9;
     border-bottom: 2px solid #00ffd9;
 }
 form h1{
@@ -34,6 +33,7 @@ form h1{
 }
 form input[type="submit"]{
     padding: 10px;
+    font-weight: bolder;
     font-size: 1em;
     display: block;
     margin: 20px auto;
@@ -43,6 +43,17 @@ form input[type="submit"]{
     border-radius: 5px;
     background: linear-gradient(to bottom right, #00ffd9, #00aaff);
 }
+@media screen and (max-width: 1000px) {
+    form{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 800px) {
+    form{
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 600px) {
     form{
         width: 80%;
